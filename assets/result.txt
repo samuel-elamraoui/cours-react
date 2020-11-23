@@ -1,0 +1,144 @@
+
+> assets@1.0.0 test C:\Users\s.elamraoui\Documents\TpIut\React\cours-react\assets
+> jest "--no-color"
+
+  console.log
+    []
+
+      at Stack.pop (javascript.js:72:11)
+
+  console.log
+    []
+
+      at Stack.pop (javascript.js:72:11)
+
+  console.log
+    [ 1, 2 ]
+
+      at Stack.pop (javascript.js:72:11)
+
+  console.log
+    [ 1 ]
+
+      at Stack.pop (javascript.js:72:11)
+
+  console.log
+    []
+
+      at Stack.pop (javascript.js:72:11)
+
+  console.log
+    [ 1, 2 ]
+
+      at Stack.pop (javascript.js:72:11)
+
+  console.log
+    [ 1 ]
+
+      at Stack.pop (javascript.js:72:11)
+
+  console.log
+    []
+
+      at Stack.pop (javascript.js:72:11)
+
+  console.log
+    1
+
+      at CustomConsole.<anonymous> (node_modules/jest-mock/build/index.js:845:25)
+
+  console.log
+    2
+
+      at CustomConsole.<anonymous> (node_modules/jest-mock/build/index.js:845:25)
+
+  console.log
+    fizz
+
+      at CustomConsole.<anonymous> (node_modules/jest-mock/build/index.js:845:25)
+
+  console.log
+    4
+
+      at CustomConsole.<anonymous> (node_modules/jest-mock/build/index.js:845:25)
+
+  console.log
+    buzz
+
+      at CustomConsole.<anonymous> (node_modules/jest-mock/build/index.js:845:25)
+
+  console.log
+    1
+
+      at CustomConsole.<anonymous> (node_modules/jest-mock/build/index.js:845:25)
+
+  console.log
+    2
+
+      at CustomConsole.<anonymous> (node_modules/jest-mock/build/index.js:845:25)
+
+  console.log
+    fizz
+
+      at CustomConsole.<anonymous> (node_modules/jest-mock/build/index.js:845:25)
+
+  console.log
+    4
+
+      at CustomConsole.<anonymous> (node_modules/jest-mock/build/index.js:845:25)
+
+  console.log
+    buzz
+
+      at CustomConsole.<anonymous> (node_modules/jest-mock/build/index.js:845:25)
+
+  console.log
+    fizz
+
+      at CustomConsole.<anonymous> (node_modules/jest-mock/build/index.js:845:25)
+
+  console.log
+    7
+
+      at CustomConsole.<anonymous> (node_modules/jest-mock/build/index.js:845:25)
+
+  console.log
+    8
+
+      at CustomConsole.<anonymous> (node_modules/jest-mock/build/index.js:845:25)
+
+  console.log
+    fizz
+
+      at CustomConsole.<anonymous> (node_modules/jest-mock/build/index.js:845:25)
+
+  console.log
+    buzz
+
+      at CustomConsole.<anonymous> (node_modules/jest-mock/build/index.js:845:25)
+
+  console.log
+    11
+
+      at CustomConsole.<anonymous> (node_modules/jest-mock/build/index.js:845:25)
+
+  console.log
+    fizz
+
+      at CustomConsole.<anonymous> (node_modules/jest-mock/build/index.js:845:25)
+
+  console.log
+    13
+
+      at CustomConsole.<anonymous> (node_modules/jest-mock/build/index.js:845:25)
+
+  console.log
+    14
+
+      at CustomConsole.<anonymous> (node_modules/jest-mock/build/index.js:845:25)
+
+  console.log
+    fizzbuzz
+
+      at CustomConsole.<anonymous> (node_modules/jest-mock/build/index.js:845:25)
+
