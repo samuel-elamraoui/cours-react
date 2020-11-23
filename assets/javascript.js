@@ -10,8 +10,26 @@ const anagrammes = (stringA, stringB) => {
    * anagrams('RAIL! SAFETY!', 'fairy tales') === true
    * anagrams('Hi there', 'Bye there') === false
    */
+  /**on remplace les caractères spéciaux par des espaces et on passe la chaîne de caractères en minuscule*/
+  stringA = stringA.replace(/[^\w]/g, "").toLowerCase()
+  stringB = stringB.replace(/[^\w]/g, "").toLowerCase()
+  /** on découpe la chaîne de caractères et on replace chaque caractère dans l'ordre alphabéthique puis on joint le tout*/
+  stringA= stringA.split('').sort().join()
+  stringB= stringB.split('').sort().join()
+/** on boucle sur les deux tableaux de caractères et on compare à chaques index les valeurs des caractères */
+  for (let char in stringA) {
+    if (stringA[char] !== stringB[char]) {
+      return false
+    }
+  }
+
+  return true
+
+
 
 };
+
+
 
 
 class Stack {
@@ -32,6 +50,35 @@ class Stack {
  * s.pop(); // returns 2
  * s.peek(); // returns 1
  */
+
+ constructor(){
+   this.tab = []
+}
+push(paramToAdd){
+  return this.tab[this.tab.length]= paramToAdd
+
+}
+
+pop(){
+   const tabTemporaire = []
+   const elemToDelete = this.tab[this.tab.length -1]
+  let i =0
+    while (i != this.tab.length - 1) {
+      tabTemporaire[i] = this.tab[i]
+      i++
+    }
+
+  this.tab = tabTemporaire
+  console.log(this.tab)
+
+
+  return elemToDelete
+
+}
+peek(){
+   return this.tab[0]
+}
+
 };
 
 
@@ -49,6 +96,19 @@ const fizzBuzz = (n) => {
  * console.log(4)
  * console.log('buzz')
  */
+for(let i =1; i<n+1;i++){
+  if(  i % 3 ===0 && i % 5 !==0){
+      console.log('fizz')
+  }else if ( i % 5 ===0 && i % 3 !==0 ) {
+    console.log('buzz')
+  }else if (i % 3 ===0 && i % 5 ===0 ) {
+    console.log('fizzbuzz')
+  }else
+    if(i !== undefined){
+      console.log(i)
+    }
+
+}
 
 };
 
@@ -70,6 +130,39 @@ const spirale = (n) => {
  *              [11, 16, 15, 6],
  *              [10,  9,  8, 7]]
  */
+var x = []
+  for (var i = 0; i < n; i++) {
+    x[i] = []
+  }
+  let counter = 1;
+  let startColumn = 0;
+  let endColumn = n - 1;
+  let startRow = 0;
+  let endRow = n - 1;
+
+  while (startColumn <= endColumn && startRow <= endRow) {
+    for (let i = startColumn; i <= endColumn; i++) {
+      x[startRow][i] = counter;
+      counter++;
+    }
+    startRow++;
+    for (let i = startRow; i <= endRow; i++) {
+      x[i][endColumn] = counter;
+      counter++;
+    }
+    endColumn--;
+      for (let i = endColumn; i >= startColumn; i--) {
+        x[endRow][i] = counter;
+        counter++;
+      }
+    endRow--;
+    for (let i = endRow; i >= startRow; i--) {
+      x[i][startColumn] = counter;
+      counter++;
+    }
+    startColumn++;
+  }
+  return x;
 
 };
 
