@@ -23,5 +23,4 @@ Ce TP montre comment créer un projet React à partir de zéro. Vous allez crée
 *7. [Designez](https://create-react-app.dev/docs/adding-a-stylesheet) la page pour qu'elle ressemble à un thème de Noel.*
 
 Le meilleur design aura un point supplémentaire !  
-  
     N'aimes-tu pas ce coté ultra kitch ?
