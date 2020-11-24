@@ -8,7 +8,7 @@ Ce TP montre comment créer un projet React à partir de zéro. Vous allez crée
 
 *1. Installez `[node et npm](https://nodejs.org/en/download/)`, et `[yarn](https://classic.yarnpkg.com/en/docs/install/#debian-stable)` sur vos ordinateurs. Listez les étapes clés de l'installation, comme si vous rédigiez un tutoriel.**  
   
-  Je préfère la méthode en ligne de commande.  
+  =>Je préfère la méthode en ligne de commande.  
   
 *2. [Quelle ligne de commande](https://github.com/facebook/create-react-app) faut-il lancer pour créer un projet React ?*
 
@@ -23,4 +23,4 @@ Ce TP montre comment créer un projet React à partir de zéro. Vous allez crée
 *7. [Designez](https://create-react-app.dev/docs/adding-a-stylesheet) la page pour qu'elle ressemble à un thème de Noel.*
 
 Le meilleur design aura un point supplémentaire !  
-    N'aimes-tu pas ce coté ultra kitch ?
+    =>N'aimes-tu pas ce coté ultra kitch ?
