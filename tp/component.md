@@ -1,6 +1,7 @@
 # TP : création d'un projet React et d'un premier composant.
 
 Ce TP montre comment créer un projet React à partir de zéro. Vous allez créer un premier composant, le designer et l'afficher sur un écran.  
+  
     npx create-react-app my-app  
     cd my-app  
     npm start  
@@ -22,4 +23,5 @@ Ce TP montre comment créer un projet React à partir de zéro. Vous allez crée
 *7. [Designez](https://create-react-app.dev/docs/adding-a-stylesheet) la page pour qu'elle ressemble à un thème de Noel.*
 
 Le meilleur design aura un point supplémentaire !  
+  
     N'aimes-tu pas ce coté ultra kitch ?
