@@ -1,12 +1,12 @@
 # TP : création d'un projet React et d'un premier composant.
 
 Ce TP montre comment créer un projet React à partir de zéro. Vous allez créer un premier composant, le designer et l'afficher sur un écran.
-  npx create-react-app my-app
-  cd my-app
-  npm start
+  npx create-react-app my-app  
+  cd my-app  
+  npm start  
 
 *1. Installez `[node et npm](https://nodejs.org/en/download/)`, et `[yarn](https://classic.yarnpkg.com/en/docs/install/#debian-stable)` sur vos ordinateurs. Listez les étapes clés de l'installation, comme si vous rédigiez un tutoriel.**    
-  Je préfère la méthode en ligne de commande. 
+  Je préfère la méthode en ligne de commande.   
 *2. [Quelle ligne de commande](https://github.com/facebook/create-react-app) faut-il lancer pour créer un projet React ?*
 
 *3. Créez un autre projet avec [Guppy](https://github.com/joshwcomeau/guppy). Quelle méthode préférez-vous ?*
