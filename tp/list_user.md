@@ -8,20 +8,27 @@ Analysez le [code situé du projet](https://codesandbox.io/s/react-props-list-fr
 **1. Quelle ligne charge le fichier JSON dans le code ?**  
   import users from "./Users.json";
 
+
 **2. Quelle est la structure de données du fichier JSON ?**  
-  un objet qui contient un tableau d'objets
+un objet contenant un tableau d'objets
 
 **3. Justifiez le `User.propTypes`. Quelles données ne sont pas prises en compte ?**  
-  Permet d'apporter de la sécurité au code en empechant et en ciblant les erreurs de type des props passées au composant
+le propType permet de controler le typage des props, ce qui apporte de la sécurité au code 
 
-**4. Quelles données sont obligatoires pour construire le composant `User` ?**
+**4. Quelles données sont obligatoires pour construire le composant `User` ?**  
+les données du fichier Json
 
-**5. A quoi correspond `PropTypes.shape` ?**
+**5. A quoi correspond `PropTypes.shape` ?**  
+il permet de décrire une props qui se présente sous la forme d'un objet dont les clés sont connues
 
-**6. Pourquoi l'attribut contient deux accolades ?**
+
+**6. Pourquoi l'attribut contient deux accolades ?**  
+car c'est un objet
 
 
-**7. Quel est le nom de l'opérateur qui transmet les données du composant `App` vers le composant `User`? Pourquoi est-ce dangereux d'abuser de cet opérateur ?**
+
+**7. Quel est le nom de l'opérateur qui transmet les données du composant `App` vers le composant `User`? Pourquoi est-ce dangereux d'abuser de cet opérateur ?**  
+
 
 
 **8. Ajoutez un paragraphe `p` au composant `User` pour afficher la date de naissance sous la forme "Né le 27/02/1942" pour un homme ou "Née le 27/02/1942" pour une femme en utilisant une condition ternaire. Copiez le code ajouté dans ce document en guise de réponse.**
