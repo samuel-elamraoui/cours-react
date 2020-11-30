@@ -8,12 +8,11 @@ Analysez le [code situé du projet](https://codesandbox.io/s/react-props-list-fr
 **1. Quelle ligne charge le fichier JSON dans le code ?**  
   import users from "./Users.json";
 
-
 **2. Quelle est la structure de données du fichier JSON ?**  
-un objet contenant un tableau d'objets
+  un objet qui contient un tableau d'objets
 
 **3. Justifiez le `User.propTypes`. Quelles données ne sont pas prises en compte ?**  
-le propType permet de controler le typage des props, ce qui apporte de la sécurité au code 
+  Permet d'apporter de la sécurité au code en empechant et en ciblant les erreurs de type des props passées au composant
 
 **4. Quelles données sont obligatoires pour construire le composant `User` ?**
 
