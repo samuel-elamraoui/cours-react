@@ -30,7 +30,7 @@ oui
 **6. Précisez étape par étape ce que fait React lorsque le champ nom est modifié.**  
 A chaque fois que quelque chose est tapé dans l'input, la methode onChange est appelé et cette dernière fait un setState via la methode définit dans le hook et passé en paramètre de la fonction. ensuite react appel le render qui affichera le nouvel valeur du champs nom. 
 
-**7. Expliquez la regex pour valider un email. Vous pouvez la recopier dans regex101.com pour vous aider.**
+**7. Expliquez la regex pour valider un email. Vous pouvez la recopier dans regex101.com pour vous aider.**  
 elle permet de controler la présence d'une chaine de caractère sous la forme : chaine de caractère + @+ chaine de caractère+ . + chaine de caractère
 
 ## Mini-projet : un timer
