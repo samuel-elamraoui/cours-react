@@ -33,7 +33,7 @@ cela s'appelle du destructuring, car cela passe beaucoup de données au composan
 
 **8. Ajoutez un paragraphe `p` au composant `User` pour afficher la date de naissance sous la forme "Né le 27/02/1942" pour un homme ou "Née le 27/02/1942" pour une femme en utilisant une condition ternaire. Copiez le code ajouté dans ce document en guise de réponse.**  
 
-({props.gender === "male" ? <p> Né le {new Date(props.dob.date).toLocaleDateString()} </p> : <p> Née le {props.dob.date}</p>})
+** {props.gender === "male" ? <p> Né le {new Date(props.dob.date).toLocaleDateString()} </p> : <p> Née le {props.dob.date}</p>} **
 
 ## Rédaction de tests
 **9. Lisez [les recettes de tests](https://fr.reactjs.org/docs/testing-recipes.html#gatsby-focus-wrapper). Rédigez un test pour vérifier que le composant `User` contient une image.**
