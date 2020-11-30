@@ -27,13 +27,13 @@ car c'est un objet
 
 
 
-**7. Quel est le nom de l'opérateur qui transmet les données du composant `App` vers le composant `User`? Pourquoi est-ce dangereux d'abuser de cet opérateur ?**  
+**7. Quel est le nom de l'opérateur qui transmet les données du composant `App` vers le composant `User`? Pourquoi est-ce dangereux d'abuser de cet opérateur ?**    
+cela s'appelle du destructuring, car cela passe beaucoup de données au composant enfant qui seront difficilement controlables par la suite, si ces données déscendes dans l'arboréscence
+ 
 
+**8. Ajoutez un paragraphe `p` au composant `User` pour afficher la date de naissance sous la forme "Né le 27/02/1942" pour un homme ou "Née le 27/02/1942" pour une femme en utilisant une condition ternaire. Copiez le code ajouté dans ce document en guise de réponse.**  
 
-
-**8. Ajoutez un paragraphe `p` au composant `User` pour afficher la date de naissance sous la forme "Né le 27/02/1942" pour un homme ou "Née le 27/02/1942" pour une femme en utilisant une condition ternaire. Copiez le code ajouté dans ce document en guise de réponse.**
-
-(Pensez à mettre votre code dans des balises Markdown  !!)
+({props.gender === "male" ? <p> Né le {new Date(props.dob.date).toLocaleDateString()} </p> : <p> Née le {props.dob.date}</p>})
 
 ## Rédaction de tests
 **9. Lisez [les recettes de tests](https://fr.reactjs.org/docs/testing-recipes.html#gatsby-focus-wrapper). Rédigez un test pour vérifier que le composant `User` contient une image.**
