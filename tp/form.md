@@ -22,6 +22,7 @@ on a trois states(ou du moins 3 attributs du state) qui valent isSubmit = false,
 elle contient la valeur tapée dans l'input
 
 **4. Pourquoi doit-on encapsuler un espace avec `{" "}` ?**  
+car on est dans de la syntax javascript
 
 
 **5. Peut-on transmettre une fonction dans un Props ?**  
