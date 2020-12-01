@@ -19,7 +19,7 @@ elle permet d'avoir accès directement à history sans passer par les props de l
 une fonction car c'est un hook
 
 **4. Faites l'implémentation de `CustomLink`, ajoutez les `propTypes`, testez la dans une codesandbox et copiez votre implémentation de `CustomLink` dans ce document.**  
-``function CustomLink({ label, to}) {
+```function CustomLink({ label, to}) {
   let history = useHistory();
   history.push("/contact/")
   return (
@@ -27,7 +27,8 @@ une fonction car c'est un hook
       <Link onClick={()=>history.push(to)}>{label}</Link>
     </div>
   );
-}``
+}
+```
 
 
 Pour procéder à l'implémentation de `CustomLink` sous l'autre forme (classe ou fonction, selon votre réponse à la question 3.), nous utiliserons la fonction [`withRouter`](https://reactrouter.com/web/api/withRouter). Il s'agit d'un HOC ; nous les verrons en détail dans un prochain cours.
@@ -62,7 +63,8 @@ return(
   
 }
 }
-export default withRouter(CustomLink)```
+export default withRouter(CustomLink)
+```
 
 ## Ré-implémenter le composant Route
 
@@ -71,7 +73,8 @@ Notre composant `CustomRoute` accepte deux props:
  - `path` est une chaîne de caractères ;
  - `component` est un composant à afficher lorsque la localisation correspond au `path`. Ce composant reçoit en props `history`, `location` et `match`.
 
-**6. Dans la documentation de la `react-router`, trouvez trois hooks permettant d'obtenir les variables `history`, `location` et `match`.**
+**6. Dans la documentation de la `react-router`, trouvez trois hooks permettant d'obtenir les variables `history`, `location` et `match`.**  
+useLocation, useParams et useHistory
 
 **7. Faites l'implémentation de `CustomRoute`, ajoutez les `propTypes`, testez la dans une codesandbox et copiez votre implémentation de `CustomRoute` dans ce document.**
 
