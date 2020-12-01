@@ -19,19 +19,50 @@ elle permet d'avoir accès directement à history sans passer par les props de l
 une fonction car c'est un hook
 
 **4. Faites l'implémentation de `CustomLink`, ajoutez les `propTypes`, testez la dans une codesandbox et copiez votre implémentation de `CustomLink` dans ce document.**  
-``function CustomLink(props){
+``function CustomLink({ label, to}) {
   let history = useHistory();
-  history.push(props.to);
-}
-CustomLink.PropTypes={
-  to:PropTypes.string
+  history.push("/contact/")
+  return (
+    <div >
+      <Link onClick={()=>history.push(to)}>{label}</Link>
+    </div>
+  );
 }``
 
 
 Pour procéder à l'implémentation de `CustomLink` sous l'autre forme (classe ou fonction, selon votre réponse à la question 3.), nous utiliserons la fonction [`withRouter`](https://reactrouter.com/web/api/withRouter). Il s'agit d'un HOC ; nous les verrons en détail dans un prochain cours.
 
-**5. Reprenez les questions 2 à 4 avec `withRouter`**
+**5. Reprenez les questions 2 à 4 avec `withRouter`**  
+2_ withRouter permet d'acceder aux porps history, match et location  
+3_ il s'utilise avec une class  
 
+_4  
+''' import React from 'react';
+import { Route , withRouter,Link,useHistory} from 'react-router-dom';
+
+
+
+class CustomLink extends React.Component {
+  constructor(props) {
+    super(props);
+   
+  }
+
+  
+
+  render() {
+    
+    const {to,label}=this.props
+return( 
+
+  <div >
+    <Link onClick={()=>this.props.history.push(to)}>{label}</Link>
+  </div>
+)
+  
+}
+}
+export default withRouter(CustomLink);'''
 
 ## Ré-implémenter le composant Route
 
