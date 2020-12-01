@@ -37,7 +37,7 @@ Pour procéder à l'implémentation de `CustomLink` sous l'autre forme (classe o
 3_ il s'utilise avec une class  
 
 _4  
-''' import React from 'react';
+``` import React from 'react';
 import { Route , withRouter,Link,useHistory} from 'react-router-dom';
 
 
@@ -62,7 +62,7 @@ return(
   
 }
 }
-export default withRouter(CustomLink);'''
+export default withRouter(CustomLink)```
 
 ## Ré-implémenter le composant Route
 
