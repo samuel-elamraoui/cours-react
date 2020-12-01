@@ -27,7 +27,13 @@ une fonction car c'est un hook
       <Link onClick={()=>history.push(to)}>{label}</Link>
     </div>
   );
+  
 }
+CustomLink.porpTypes={
+  to: PropTypes.string,
+  Label: PropTypes.string
+}
+
 ```
 
 
@@ -39,6 +45,7 @@ Pour procéder à l'implémentation de `CustomLink` sous l'autre forme (classe o
 
 _4  
 ``` import React from 'react';
+import PropTypes from 'prop-types';
 import { Route , withRouter,Link,useHistory} from 'react-router-dom';
 
 
@@ -62,6 +69,10 @@ return(
 )
   
 }
+CustomLink.porpTypes={
+  to: PropTypes.string,
+  Label: PropTypes.string
+}
 }
 export default withRouter(CustomLink)
 ```
@@ -74,7 +85,7 @@ Notre composant `CustomRoute` accepte deux props:
  - `component` est un composant à afficher lorsque la localisation correspond au `path`. Ce composant reçoit en props `history`, `location` et `match`.
 
 **6. Dans la documentation de la `react-router`, trouvez trois hooks permettant d'obtenir les variables `history`, `location` et `match`.**  
-useLocation, useParams et useHistory
+`useLocation`,`useParams` et `useHistory`  
 
 **7. Faites l'implémentation de `CustomRoute`, ajoutez les `propTypes`, testez la dans une codesandbox et copiez votre implémentation de `CustomRoute` dans ce document.**
 
