@@ -7,15 +7,26 @@ Pour bien comprendre ce qui se trame dans le routage, nous ré-implémentons les
 
 Notre version de `Link`, appelée `CustomLink` accepte un props `to` sous la forme d'une chaîne de caractères. Lorsqu'un utilisateur clique sur `Link`, il est redirigé vers la page indiquée par `to`.
 
-**1. Comment fait-on une redirection avec `react-router` ?**
+**1. Comment fait-on une redirection avec `react-router` ?**  
+en utilisant la methode push sur l'objet history et en lui passant l'url désirée
 
 Mais comment avoir accès à cet objet que vous venez d'évoquer ? Dans le cours, il était injecté par `Route`. Cette fois-ci, nous allons utiliser la fonction [`useHistory`](https://reactrouter.com/web/api/Hooks/usehistory). 
 
-**2. Après avoir lu la documentation correspondante, décrivez le fonctionnement de cette fonction.**
+**2. Après avoir lu la documentation correspondante, décrivez le fonctionnement de cette fonction.**  
+elle permet d'avoir accès directement à history sans passer par les props de la route
 
-**3. En utilisant cette fonction, devez-vous implémenter le `CustomLink` composant sous la forme d'une fonction ou d'une classe ?**
+**3. En utilisant cette fonction, devez-vous implémenter le `CustomLink` composant sous la forme d'une fonction ou d'une classe ?**  
+une fonction car c'est un hook
 
-**4. Faites l'implémentation de `CustomLink`, ajoutez les `propTypes`, testez la dans une codesandbox et copiez votre implémentation de `CustomLink` dans ce document.**
+**4. Faites l'implémentation de `CustomLink`, ajoutez les `propTypes`, testez la dans une codesandbox et copiez votre implémentation de `CustomLink` dans ce document.**  
+``function CustomLink(props){
+  let history = useHistory();
+  history.push(props.to);
+}
+CustomLink.PropTypes={
+  to:PropTypes.string
+}``
+
 
 Pour procéder à l'implémentation de `CustomLink` sous l'autre forme (classe ou fonction, selon votre réponse à la question 3.), nous utiliserons la fonction [`withRouter`](https://reactrouter.com/web/api/withRouter). Il s'agit d'un HOC ; nous les verrons en détail dans un prochain cours.
 
