@@ -149,7 +149,8 @@ ReactDOM.render(
 );
 ```
 
-**8. Ce code utilise `useParams`, que nous n'avons encore jamais utilisé. A quoi sert-il ?**
+**8. Ce code utilise `useParams`, que nous n'avons encore jamais utilisé. A quoi sert-il ?**  
+`useParams` permet de récupérer(sous la forme d'un objet) les paramètres de l'url de la route 
 
 **9. Créez un nouveau projet à partir de code.  Créez un test qui injecte `MemoryRouter` autour de `App`. Indiquez des URL à `MemoryRouter` et vérifiez que les posts affichent bien le contenu de l'URL.**
 
