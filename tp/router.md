@@ -87,7 +87,19 @@ Notre composant `CustomRoute` accepte deux props:
 **6. Dans la documentation de la `react-router`, trouvez trois hooks permettant d'obtenir les variables `history`, `location` et `match`.**  
 `useLocation`,`useParams` et `useHistory`  
 
-**7. Faites l'implémentation de `CustomRoute`, ajoutez les `propTypes`, testez la dans une codesandbox et copiez votre implémentation de `CustomRoute` dans ce document.**
+**7. Faites l'implémentation de `CustomRoute`, ajoutez les `propTypes`, testez la dans une codesandbox et copiez votre implémentation de `CustomRoute` dans ce document.**  
+```
+function CustomRoute({path,component}){
+  if(path === "/"){
+    return <Route exact={true} path={path} component={component}/>
+  }
+  return <Route path={path} component={component}/>
+}
+CustomRoute.porpTypes={
+  path: PropTypes.string,
+  component: PropTypes.element
+}
+```
 
 
 ## Tester le routage avec React
