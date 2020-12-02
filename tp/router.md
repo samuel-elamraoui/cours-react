@@ -19,17 +19,25 @@ elle permet d'avoir accès directement à history sans passer par les props de l
 une fonction car c'est un hook
 
 **4. Faites l'implémentation de `CustomLink`, ajoutez les `propTypes`, testez la dans une codesandbox et copiez votre implémentation de `CustomLink` dans ce document.**  
-```function CustomLink({ label, to}) {
-  let history = useHistory();
-  history.push("/contact/")
-  return (
-    <div >
-      <Link onClick={()=>history.push(to)}>{label}</Link>
-    </div>
-  );
+```import React from 'react'
+import PropTypes from 'prop-types';
+import { useHistory } from 'react-router-dom';
+
+
+export default function MyCustomLink({to,children}){
   
+  let history = useHistory();
+  
+  function Link() { 
+    history.push(to);
+  }
+
+  return (
+      <li onClick={Link}>{children}</li>
+  );
 }
-CustomLink.porpTypes={
+
+MyCustomLink.propTypes={
   to: PropTypes.string,
   Label: PropTypes.string
 }
@@ -44,36 +52,30 @@ Pour procéder à l'implémentation de `CustomLink` sous l'autre forme (classe o
 3_ il s'utilise avec une class  
 
 _4  
-``` import React from 'react';
+``` import React from 'react'
 import PropTypes from 'prop-types';
 import { Route , withRouter,Link,useHistory} from 'react-router-dom';
 
 
 
 class CustomLink extends React.Component {
-  constructor(props) {
-    super(props);
-   
-  }
-
-  
 
   render() {
-    
-    const {to,label}=this.props
-return( 
 
-  <div >
-    <Link onClick={()=>this.props.history.push(to)}>{label}</Link>
-  </div>
-)
-  
+    const {to,children}=this.props
+    
+    return( 
+      <div>
+        <li onClick={()=>this.props.history.push(to)}>{children}</li>    
+      </div> 
+    )}
 }
-CustomLink.porpTypes={
+
+CustomLink.propTypes={
   to: PropTypes.string,
   Label: PropTypes.string
 }
-}
+
 export default withRouter(CustomLink)
 ```
 
